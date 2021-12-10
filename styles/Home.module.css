@@ -114,3 +114,24 @@
     flex-direction: column;
   }
 }
+
+.input_todo{
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.ant-card-body{
+  padding: 0 !important;
+}
+
+.gach{
+  text-decoration-line: line-through;
+  cursor: pointer;
+}
+.todoo{
+  cursor: pointer;
+  margin-bottom: 20px;
+  /* width: 600px; */
+  display: flex;
+  justify-content: space-between;
+}
