@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-        Bài tập của Vân Anh
+          Bài tập của Vân Anh
         </h1>
         <div className={styles.grid}>
           <a href="./todolist" className={styles.card}>
@@ -22,7 +22,19 @@ export default function Home() {
             </p>
           </a>
         </div>
+
+        <div className={styles.grid}>
+          <Link href="/users" >
+            <a className={styles.card}>
+              <h2>Get SSR  &rarr;</h2>
+              <p>Bài tập SSR của Vân Anh nha!!!
+              </p>
+            </a>
+          </Link>
+        </div>
+
       </main>
+
 
     </div>
   )
